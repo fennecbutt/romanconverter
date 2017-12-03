@@ -13,7 +13,7 @@
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
+    "test": "cross-env CI=true react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
     "serve": "serve -s build"
   },
@@ -21,6 +21,7 @@
     "@types/jest": "^21.1.8",
     "@types/node": "^8.0.53",
     "@types/react": "^16.0.25",
-    "@types/react-dom": "^16.0.3"
+    "@types/react-dom": "^16.0.3",
+    "cross-env": "^5.1.1"
   }
 }
