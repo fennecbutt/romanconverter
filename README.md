@@ -8,3 +8,5 @@ For first time use please run:
 To serve/use please run:
 `npm run serve`
 And [click here](http://127.0.0.1:5000) to access the app
+
+This little app could be improved a lot by harnessing the power of a designer to make it look a lot better than it currently does. But since it's so simple, I think it can manage as is.
