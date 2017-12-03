@@ -21,7 +21,10 @@ class App extends React.Component<{}, AppState> {
   }
 
   private UpdateConversionInput(e: ChangeEvent<HTMLInputElement>) {
-    this.setState({ input: e.target.value.toUpperCase() }, this.Convert.bind(this));
+    let formattedInput = e.target.value.toUpperCase();
+    if(!formattedInput || /^[\dIVXLCDM]+$/.test(formattedInput)){
+      this.setState({ input: formattedInput }, this.Convert.bind(this));
+    }
   }
 
   /**
